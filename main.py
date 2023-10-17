@@ -1,7 +1,13 @@
-def fact(n):
-  if n==0 or n==1:
-    return 1
-  else:
-     return (n*fact(n-1))
-n=int(input("enter the N value"))
-print("the factorial of ",n,"is:",fact(n))
+class player:
+  def play(self):
+    print("the player is playing cricket")
+class batsman(player):
+  def play(self):
+    print("the batsman is bating")
+class bowler(player):
+  def play(self):
+    print("the bowler is bowling")
+batsman = batsman()
+bowler = bowler()
+batsman.play()
+bowler.play()
